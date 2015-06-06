@@ -1,0 +1,24 @@
+<?xml version="1.0" ?><manifest>
+
+  <include name="base-kk-aosp.xml"/>
+
+  <remote name="cyanogenmod"
+	  fetch="https://github.com/cyanogenmod/android_device_google_sprout/" />
+  <remote name="aosp"
+          fetch="https://android.googlesource.com/" />
+  <remote name="b2g"
+          fetch="git://github.com/mozilla-b2g/" />
+  <remote name="mozilla"
+	  fetch="git://github.com/mozilla/" />
+  <remote name="apitrace" 
+          fetch="git://github.com/apitrace/" />
+  <remote name="mozillaorg"
+          fetch="https://git.mozilla.org/releases" />
+
+  <default remote="cyanogenmod" revision="cm-11.0" sync-j="4"/>
+
+  <!-- Micromax A106 specific things -->
+  <project name="android_device_google_sprout" path="device/mmx/a106" />
+  <project name="android_kernel_mediatek_sprout" path="kernel/mmx/a106" />
+
+</manifest>
